@@ -1,0 +1,33 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    Console.WriteLine("LANCHE");
+
+    int cod = int.Parse(Console.ReadLine());
+    int qtd = int.Parse(Console.ReadLine());
+
+    double total;
+
+    if (cod == 1){
+      total = qtd * 4.00;
+      Console.WriteLine("Total: R$ " + total.ToString("F2"));
+    }else if (cod == 2){
+      total = qtd * 4.50;
+      Console.WriteLine("Total: R$ " + total.ToString("F2"));      
+    }
+    else if (cod == 3){
+      total = qtd * 5.00;
+      Console.WriteLine("Total: R$ " + total.ToString("F2"));      
+    }
+    else if (cod == 4){
+      total = qtd * 2.00;
+      Console.WriteLine("Total: R$ " + total.ToString("F2"));      
+    }
+    else if (cod == 5){
+      total = qtd * 1.50;
+      Console.WriteLine("Total: R$ " + total.ToString("F2"));      
+    } 	  
+  }
+}
